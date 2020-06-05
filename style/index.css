@@ -138,10 +138,11 @@ footer {
     justify-content: center;
     color:white;
     text-align:center;
+    background-color:lightgrey;
 }
 footer div {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     padding: 4% 0;
@@ -156,13 +157,14 @@ footer div p {
     font-weight: bold;
 }
 
-footer div a {
+footer div a#nonicon {
     border: 2px solid black;
     text-decoration: none;
     padding: 1% 5%;
     background-color: white;
     color:black;
     font-family: 'Architects Daughter', cursive;
+    display:block;
     /* transition: transform .5s; */
 }
 
@@ -171,6 +173,7 @@ footer div a {
     background-color: black;
     transform: scale(1.20);
 } */
+
 
 @media screen and (max-width: 799px) {
     h1 {
@@ -258,9 +261,13 @@ footer div a {
         justify-content: space-around;
         height: 20vh;
     }
-
-
 }
+#icon {
+    display:block;
+    padding-top: 10px;
+    margin:0;
+}
+
 
 
 /* CSS animations for non-mobile*/
