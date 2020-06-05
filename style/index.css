@@ -80,7 +80,8 @@ nav a:hover {
     justify-content: space-between;
     padding: 1%;
 }
-#img-block1 p, #img-block2 p {
+#img-block1 a, #img-block2 a {
+    display:block;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     border-bottom: 1px dashed white;
@@ -89,10 +90,15 @@ nav a:hover {
     color:white;
 }
 
-/*experiment*/
-p:hover span {
+a:hover span {
     display:none;
 }
+
+#img-block1 a:hover:before, #img-block2 a:hover:before  {
+ content: "Click here to view my project!";
+ font-size: 1.2rem;
+}
+
 
 
 footer {
