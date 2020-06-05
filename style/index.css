@@ -6,7 +6,6 @@ html {
 }
 header {
     background-color: lightgrey;
-    /* margin: 0 1%; */
     position:fixed;
     width: 100%;
     top:0;
@@ -14,35 +13,35 @@ header {
     z-index: 9999;
 }
 main {
-    margin-top: 20vh;
+    margin-top: 130px;
 }
 h1 {
     text-transform: uppercase;
     font-size: 3rem;
     font-family: 'Lexend Tera', sans-serif;
     font-weight: bold;
-    padding: 2%
+    padding: 2vh 2vw;
 }
 nav {
     display:flex;
-    padding: 1% 1% 1% 5%;
+    padding: 1vh 1vh 1vw 5vw;
 }
 
 nav a {
     font-family: 'Lexend Tera', sans-serif;
     font-weight: bold;
     text-align: center;
-    padding: 1.5% 2%;
+    padding: 1.5vh 2vw;
     background-color: white;
     color: black;
     text-decoration: none;
-    transition: transform .7s;
+    /* transition: transform .7s; */
 }
-nav a:hover {
+/* nav a:hover {
     background-color: black;
     color: white;
     transform: scale(1.10);
-}
+} */
 
 #section-one {
     display: flex;
@@ -50,7 +49,7 @@ nav a:hover {
     align-items: flex-end;
     width: 100%;
     padding: 1%;
-    margin-top: .5%;
+    /* margin-top: .5%; */
     
 }
 #section-one img {
@@ -77,11 +76,11 @@ nav a:hover {
     padding: 1% 5%;
     color:white;
 }
-#info-container a:hover {
+/* #info-container a:hover {
     background-color:white;
     color:black;
     font-weight:bold;
-}
+} */
 
 #section-two {
     padding: 3% 0;
@@ -106,12 +105,12 @@ nav a:hover {
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     color:white;
-    transition: transform .4s;
+    /* transition: transform .4s; */
     padding-top: 7%;
     font-size: 1vw;
 }
 
-a:hover span {
+/* a:hover span {
     display:none;
 }
 
@@ -125,11 +124,11 @@ a:hover span {
 
 #section-two img {
     transition: transform .5s;
-}
+} */
 
-#img-block1 img:hover, #img-block2 img:hover {
+/* #img-block1 img:hover, #img-block2 img:hover {
     transform: scale(1.10)
-}
+} */
 
 #img-block1 {
     margin-bottom: 1%;
@@ -164,11 +163,148 @@ footer div a {
     background-color: white;
     color:black;
     font-family: 'Architects Daughter', cursive;
-    transition: transform .5s;
+    /* transition: transform .5s; */
 }
 
-footer div a:hover {
+/* footer div a:hover {
     color: white;
     background-color: black;
     transform: scale(1.20);
+} */
+
+@media screen and (max-width: 799px) {
+    h1 {
+        text-align: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+        
+    }
+    header nav a {
+        border: 3px solid lightgrey;
+    }
+
+    #section-one {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-one img {
+        margin-bottom: 4%;
+    }
+
+    #section-two {
+        display:flex;
+    }
+
+    #img-block1, #img-block2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img-block1 div, #img-block2 div {
+        width: 90%;
+    }
+
+    #info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    #info-container h2 {
+        padding:2vh;
+    }
+    #info-container p {
+        padding: 2vh;
+    }
+    #info-container a {
+        color:black;
+        background-color:white;
+        text-decoration: underline;
+    }
+    #section-one img {
+        width: 50%;
+    }
+
+    #section-two a, #section-one a {
+        padding: 2vh;
+        font-size: 2vh;
+    }
+    footer {
+        display:flex;
+        width: 100%;
+        background-color:lightgrey;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer div p {
+        padding: 0;
+    }
+    #section-two div {
+        margin-bottom:0;
+    }
+    footer div {
+        font-size: 2vh;
+        display:flex;
+        justify-content: space-around;
+        height: 20vh;
+    }
+
+
+}
+
+
+/* CSS animations for non-mobile*/
+@media screen and (min-width:800px) {
+    footer div a:hover {
+        color: white;
+        background-color: black;
+        transform: scale(1.20);
+    }
+    footer div a {
+        transition: transform .5s;
+    }
+    #img-block1 img:hover, #img-block2 img:hover {
+        transform: scale(1.10)
+    }
+
+    a:hover span {
+        display:none;
+    }
+    
+    #img-block1 a:hover:before, #img-block2 a:hover:before  {
+     content: "Click here to view my project!";
+    }
+    
+    #img-block1 a:hover, #img-block2 a:hover {
+        transform: scale(1.30)
+    }
+    
+    #section-two img {
+        transition: transform .5s;
+    }
+    #img-block1 a, #img-block2 a {transition: transform .4s;}
+    #info-container a:hover {
+        background-color:white;
+        color:black;
+        font-weight:bold;
+    }
+    nav a:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.10);
+    }
+    nav a {
+        transition: transform .7s;
+    }
+
 }

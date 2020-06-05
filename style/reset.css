@@ -52,6 +52,5 @@ table {
 
 * {
     box-sizing:border-box;
-	/* border: 1px solid grey !important; */
 	max-width: 100% !important;
 }
