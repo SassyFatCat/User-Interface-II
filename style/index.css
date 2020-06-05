@@ -1,9 +1,12 @@
 html {
     font-size: 62.5%;
     background-color: black;
+    width: 90%;
+    margin: 0 auto;
 }
 header {
     background-color: lightgrey;
+    margin: 0 1%;
 }
 h1 {
     text-transform: uppercase;
@@ -84,10 +87,8 @@ nav a:hover {
     display:block;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
-    border-bottom: 1px dashed white;
-    border-left: 1px dashed white;
-    border-right: 1px dashed white;
     color:white;
+    transition: transform .4s;
 }
 
 a:hover span {
@@ -96,10 +97,19 @@ a:hover span {
 
 #img-block1 a:hover:before, #img-block2 a:hover:before  {
  content: "Click here to view my project!";
- font-size: 1.2rem;
 }
 
+#img-block1 a:hover, #img-block2 a:hover {
+    transform: scale(1.30)
+}
 
+#section-two img {
+    transition: transform .5s;
+}
+
+#img-block1 img:hover, #img-block2 img:hover {
+    transform: scale(1.20)
+}
 
 footer {
     justify-content: center;
