@@ -89,6 +89,12 @@ nav a:hover {
     color:white;
 }
 
+/*experiment*/
+p:hover span {
+    display:none;
+}
+
+
 footer {
     justify-content: center;
     color:white;
