@@ -166,15 +166,17 @@ footer div a#nonicon {
     color:black;
     font-family: 'Architects Daughter', cursive;
     display:block;
-    /* transition: transform .5s; */
 }
 
-/* footer div a:hover {
-    color: white;
-    background-color: black;
-    transform: scale(1.20);
-} */
-
+#icon-link {
+    display:inline-block;
+    margin-top: 2%;
+    text-decoration: none;
+    font-weight: bold;
+}
+#icon {
+    display: inline-block;
+}
 
 @media screen and (max-width: 800px) {
     html {
@@ -280,11 +282,6 @@ footer div a#nonicon {
         height: 20vh;
     }
 }
-#icon {
-    display:block;
-    margin-top: 2%;
-}
-
 
 
 /* CSS animations for non-mobile*/
