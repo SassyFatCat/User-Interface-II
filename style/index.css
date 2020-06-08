@@ -63,6 +63,7 @@ nav a {
     color: white;
 }
 #info-container h2 {
+    font-size: 4rem;
     text-transform: uppercase;
     padding-bottom: 6%;
 }
@@ -175,9 +176,13 @@ footer div a#nonicon {
 } */
 
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 800px) {
+    html {
+        width:100%;
+    }
     h1 {
         text-align: center;
+        font-size: 4rem;
     }
     header {
         display: flex;
@@ -185,13 +190,20 @@ footer div a#nonicon {
         width: 100%;
     }
     header nav {
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 2% auto;
         text-align: center;
         padding: 0;
         
     }
     header nav a {
         border: 3px solid lightgrey;
+        border-style: outset;
+        margin: 2% 0;
+    }
+    main {
+        margin-top: 36vh;
     }
 
     #section-one {
@@ -199,7 +211,9 @@ footer div a#nonicon {
         align-items: center;
     }
     #section-one img {
-        margin-bottom: 4%;
+        width: 70%;
+        max-height: 40vh;
+        margin-bottom: 1%;
     }
 
     #section-two {
@@ -209,10 +223,12 @@ footer div a#nonicon {
     #img-block1, #img-block2 {
         flex-direction: column;
         align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     #img-block1 div, #img-block2 div {
-        width: 90%;
+        width: 80%;
     }
 
     #info-container {
@@ -224,19 +240,20 @@ footer div a#nonicon {
         width: 100%;
     }
     #info-container h2 {
+        font-size: 3.5rem;
         padding:2vh;
     }
     #info-container p {
+        font-size: 1.5rem;
         padding: 2vh;
     }
     #info-container a {
+        font-size: 3rem;
         color:black;
         background-color:white;
         text-decoration: underline;
     }
-    #section-one img {
-        width: 50%;
-    }
+
 
     #section-two a, #section-one a {
         padding: 2vh;
@@ -251,6 +268,7 @@ footer div a#nonicon {
     }
     footer div p {
         padding: 0;
+        margin-bottom: 2%;
     }
     #section-two div {
         margin-bottom:0;
@@ -264,8 +282,7 @@ footer div a#nonicon {
 }
 #icon {
     display:block;
-    padding-top: 10px;
-    margin:0;
+    margin-top: 2%;
 }
 
 
