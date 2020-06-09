@@ -1,1 +1,297 @@
-/* Add CSS styling here */
+html {
+    font-size: 62.5%;
+    background-color: black;
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    background-color: lightgrey;
+    position:fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 9999;
+}
+main {
+    margin-top: 130px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: bold;
+    padding: 2vh 2vw;
+}
+nav {
+    display:flex;
+    padding: 1vh 1vh 1vw 5vw;
+}
+
+nav a {
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5vh 2vw;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+#section-one {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 1%;
+    
+}
+#section-one img {
+    width: 47%;
+}
+#info-container {
+    width: 47%;
+    font-size: 2rem;
+    font-family: 'Architects Daughter', cursive;
+    padding: 0 2%;
+    color: white;
+}
+#info-container h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 6%;
+}
+#info-container p {
+    padding-top: 6%;
+}
+#info-container a {
+    font-size: 1.3rem;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 1% 5%;
+    color:white;
+}
+#section-two {
+    padding: 3% 0;
+}
+
+#img-block1, #img-block2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#img-block1 div, #img-block2 div {
+    width: 20%;
+}
+#img-block1 div img, #img-block2 div img {
+    width: 100%;
+}
+
+#img-block1 a, #img-block2 a {
+    display:block;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    color:white;
+    padding-top: 7%;
+    font-size: 1vw;
+}
+
+#img-block1 {
+    margin-bottom: 1%;
+}
+
+footer {
+    justify-content: center;
+    color:white;
+    text-align:center;
+    background-color:lightgrey;
+}
+footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0;
+    font-size: 2rem;
+    background-color:lightgrey;
+}
+
+footer div p {
+    font-family: 'Architects Daughter', cursive;
+    padding-bottom: 2%;
+    color: black;
+    font-weight: bold;
+}
+
+footer div a#nonicon {
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 1% 5%;
+    background-color: white;
+    color:black;
+    font-family: 'Architects Daughter', cursive;
+    display:block;
+}
+
+#icon-link {
+    display:inline-block;
+    margin-top: 2%;
+    text-decoration: none;
+    font-weight: bold;
+}
+#icon {
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        width:100%;
+    }
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 2% auto;
+        text-align: center;
+        padding: 0;
+        
+    }
+    header nav a {
+        border: 3px solid lightgrey;
+        border-style: outset;
+        margin: 2% 0;
+    }
+    main {
+        margin-top: 36vh;
+    }
+
+    #section-one {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-one img {
+        width: 70%;
+        max-height: 40vh;
+        margin-bottom: 1%;
+    }
+
+    #section-two {
+        display:flex;
+    }
+
+    #img-block1, #img-block2 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #img-block1 div, #img-block2 div {
+        width: 80%;
+    }
+
+    #info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    #info-container h2 {
+        font-size: 3.5rem;
+        padding:2vh;
+    }
+    #info-container p {
+        font-size: 1.5rem;
+        padding: 2vh;
+    }
+    #info-container a {
+        font-size: 3rem;
+        color:black;
+        background-color:white;
+        text-decoration: underline;
+    }
+
+
+    #section-two a, #section-one a {
+        padding: 2vh;
+        font-size: 2vh;
+    }
+    footer {
+        display:flex;
+        width: 100%;
+        background-color:lightgrey;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer div p {
+        padding: 0;
+        margin-bottom: 2%;
+    }
+    #section-two div {
+        margin-bottom:0;
+    }
+    footer div {
+        font-size: 2vh;
+        display:flex;
+        justify-content: space-around;
+        height: 20vh;
+    }
+}
+
+
+/* CSS animations for non-mobile*/
+@media screen and (min-width:800px) {
+    footer div a:hover {
+        color: white;
+        background-color: black;
+        transform: scale(1.20);
+    }
+    footer div a {
+        transition: transform .5s;
+    }
+    #img-block1 img:hover, #img-block2 img:hover {
+        transform: scale(1.10)
+    }
+
+    a:hover span {
+        display:none;
+    }
+    
+    #img-block1 a:hover:before, #img-block2 a:hover:before  {
+     content: "Click here to view my project!";
+    }
+    
+    #img-block1 a:hover, #img-block2 a:hover {
+        transform: scale(1.30)
+    }
+    
+    #section-two img {
+        transition: transform .5s;
+    }
+    #img-block1 a, #img-block2 a {transition: transform .4s;}
+    #info-container a:hover {
+        background-color:white;
+        color:black;
+        font-weight:bold;
+    }
+    nav a:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.10);
+    }
+    nav a {
+        transition: transform .7s;
+    }
+
+}
